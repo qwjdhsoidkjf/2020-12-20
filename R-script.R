@@ -1,5 +1,5 @@
 ##############################################################################################################################
-setwd('G:/BaiduNetdiskDownload ')
+setwd("C:\\Users\\huihgferoiiuyt\\arg\\cervical")
 library("edgeR")
 library("clusterProfiler")
 library("org.Hs.eg.db")
