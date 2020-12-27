@@ -19,7 +19,7 @@ padj=0.05
 rt_data1<-read.table("ARGexp-data1.txt",sep="\t",header=T,check.names=F) 
 rt_data1<-as.matrix(rt_data1)
 rownames(rt_data1)<-rt_data1 [,1]
-exp<-rt_data1 [,2:ncol]
+exp<-rt_data1 [,2:ncol(rt_data1)]
 dimnames<-list(rownames(exp),colnames(exp))
 data<-matrix(as.numeric(as.matrix(exp)),nrow=nrow(exp),dimnames=dimnames)
 data<-avereps(data)
