@@ -16,7 +16,7 @@ library(scatterplot3d)
 #Difference expression analysis(edgeR)
 foldchange<-1
 padj=0.05
-rt_data1<-read.table("data1.txt",sep="\t",header=T,check.names=F) 
+rt_data1<-read.table("ARGexp-data1.txt",sep="\t",header=T,check.names=F) 
 rt_data1<-as.matrix(rt_data1)
 rownames(rt_data1)<-rt_data1 [,1]
 exp<-rt_data1 [,2:ncol]
